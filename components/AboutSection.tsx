@@ -11,7 +11,7 @@ export default function AboutSection() {
 
   return (
     <section id="about" ref={ref} className="min-h-screen py-32 px-6 relative">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
