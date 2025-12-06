@@ -21,7 +21,7 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
         <motion.div
           whileHover={{ y: -8, scale: 1.02 }}
           transition={{ duration: 0.3, ease: "easeOut" }}
-          className="h-full p-8 rounded-3xl border border-slate-200 bg-white hover:border-slate-300 hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300 cursor-pointer"
+          className="h-full p-8 rounded-3xl glass-card hover:bg-white/80 hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300 cursor-pointer"
         >
           <h3 className="text-2xl md:text-3xl font-normal mb-3 text-slate-950 group-hover:text-slate-700 transition-colors">
             {project.name}
