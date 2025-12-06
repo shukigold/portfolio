@@ -26,7 +26,7 @@ export default function AboutSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="space-y-8 text-lg md:text-xl text-slate-700 leading-relaxed p-8 rounded-3xl glass-card"
+            className="space-y-8 text-lg md:text-xl text-slate-700 leading-relaxed"
           >
             <p>
               Product designer based in Israel, working on complex B2B
