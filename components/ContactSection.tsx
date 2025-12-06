@@ -1,4 +1,5 @@
 "use client";
+/* eslint-disable react/no-unescaped-entities */
 
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
@@ -21,7 +22,7 @@ export default function ContactSection() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-5xl md:text-6xl font-semibold mb-6">
-            Let&apos;s work together
+            Lets work together
           </h2>
           <p className="text-xl text-slate-400 mb-12 max-w-2xl mx-auto">
           I&apos;m open to new opportunities, collaborations, and freelance
