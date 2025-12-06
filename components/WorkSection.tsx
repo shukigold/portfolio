@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
@@ -37,15 +38,27 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
         <motion.div
           whileHover={{ y: -8, scale: 1.02 }}
           transition={{ duration: 0.3, ease: "easeOut" }}
-          className="h-full p-8 rounded-3xl glass-card hover:bg-white/80 hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300 cursor-pointer flex flex-col"
+          className="h-full rounded-3xl glass-card hover:bg-white/80 hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300 cursor-pointer flex flex-col overflow-hidden"
         >
-          <div className="flex-1">
-            <h3 className="text-2xl md:text-3xl font-normal mb-3 text-slate-950 group-hover:text-slate-700 transition-colors">
-              {project.name}
-            </h3>
-            <p className="text-lg text-slate-600 leading-relaxed mb-4">
-              {project.description}
-            </p>
+          {project.thumbnail && (
+            <div className="relative w-full h-48 md:h-56 overflow-hidden bg-slate-100">
+              <Image
+                src={project.thumbnail}
+                alt={project.name}
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-300"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+            </div>
+          )}
+          <div className="flex-1 p-6 md:p-8 flex flex-col">
+            <div className="flex-1">
+              <h3 className="text-2xl md:text-3xl font-normal mb-3 text-slate-950 group-hover:text-slate-700 transition-colors">
+                {project.name}
+              </h3>
+              <p className="text-lg text-slate-600 leading-relaxed mb-4">
+                {project.description}
+              </p>
             {project.tags && project.tags.length > 0 && (
               <div className="flex flex-wrap gap-2 mt-4">
                 {project.tags.slice(0, 3).map((tag) => (
@@ -58,8 +71,8 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
                 ))}
               </div>
             )}
-          </div>
-          <div className="mt-6 text-sm text-slate-500 group-hover:text-slate-700 transition-colors flex items-center gap-2">
+            </div>
+            <div className="mt-6 text-sm text-slate-500 group-hover:text-slate-700 transition-colors flex items-center gap-2">
             View project
             <motion.svg
               className="w-4 h-4"

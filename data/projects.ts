@@ -3,6 +3,7 @@ export interface Project {
   slug: string;
   description: string;
   longDescription?: string;
+  thumbnail?: string;
   tags?: string[];
   year?: string;
   role?: string;
@@ -16,6 +17,7 @@ export const projects: Project[] = [
     name: "Fiverr",
     slug: "fiverr",
     description: "Marketplace platform redesign focusing on improved seller workflows and enhanced user trust.",
+    thumbnail: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
     longDescription: "A comprehensive redesign of Fiverr's marketplace platform with a focus on improving seller workflows and building user trust. The project involved extensive UX research, user journey mapping, and iterative design improvements.",
     tags: ["Product Design", "UX Flows", "Marketplace"],
     year: "2023",
@@ -28,6 +30,7 @@ export const projects: Project[] = [
     name: "Just Eat Takeaway",
     slug: "just-eat-takeaway",
     description: "Food delivery platform optimization with emphasis on order tracking and user satisfaction.",
+    thumbnail: "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=800&h=600&fit=crop",
     longDescription: "Optimization of the Just Eat Takeaway platform focusing on order tracking, delivery experience, and overall user satisfaction. The redesign improved order visibility and customer communication throughout the delivery process.",
     tags: ["Product Design", "UX Research", "Mobile"],
     year: "2023",
@@ -40,6 +43,7 @@ export const projects: Project[] = [
     name: "SundaySky",
     slug: "sundaysky",
     description: "Video personalization platform with focus on scalable design systems and component libraries.",
+    thumbnail: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop",
     longDescription: "Design and development of a video personalization platform with emphasis on creating scalable design systems and reusable component libraries. This project involved building a comprehensive design system from the ground up.",
     tags: ["Design System", "Product Design", "B2B"],
     year: "2022",
@@ -52,6 +56,7 @@ export const projects: Project[] = [
     name: "Elision",
     slug: "elision",
     description: "Fintech dashboard redesign with emphasis on data visualization and role-based permissions.",
+    thumbnail: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
     longDescription: "Complete redesign of Elision's fintech dashboard with focus on data visualization, role-based permissions, and complex financial workflows. The project required deep understanding of financial data and user roles.",
     tags: ["Fintech", "Dashboards", "UX Flows"],
     year: "2022",
@@ -64,6 +69,7 @@ export const projects: Project[] = [
     name: "Strength Athletics",
     slug: "strength-athletics",
     description: "Fitness platform design with focus on workout tracking and user engagement.",
+    thumbnail: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop",
     longDescription: "Design of a comprehensive fitness platform focusing on workout tracking, progress monitoring, and user engagement. The platform helps athletes track their training, set goals, and measure progress over time.",
     tags: ["Product Design", "Mobile", "UX Research"],
     year: "2023",
@@ -76,6 +82,7 @@ export const projects: Project[] = [
     name: "Melio",
     slug: "melio",
     description: "B2B payments platform with vendor management and streamlined payment workflows.",
+    thumbnail: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
     longDescription: "Design of Melio's B2B payments platform with comprehensive vendor management and streamlined payment workflows. The platform simplifies business payments and vendor relationships for small and medium businesses.",
     tags: ["Fintech", "B2B", "Design System"],
     year: "2023",
