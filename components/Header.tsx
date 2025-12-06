@@ -1,24 +1,16 @@
 "use client";
 
-import { motion } from "framer-motion";
-
 export default function Header() {
   return (
-    <motion.header
-      initial={{ y: -20, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-      className="fixed top-0 left-0 right-0 z-50 px-6 py-6"
-    >
+    <header className="fixed top-0 left-0 right-0 z-50 px-6 py-6">
       <nav className="max-w-7xl mx-auto flex items-center justify-between">
-        <motion.a
+        <a
           href="/"
-          whileHover={{ scale: 1.05 }}
-          className="text-xl font-semibold text-slate-50"
+          className="text-lg font-normal text-slate-50 hover:text-slate-300 transition-colors"
         >
           Joshua Goldberg
-        </motion.a>
-        <div className="hidden md:flex items-center gap-8">
+        </a>
+        <div className="flex items-center gap-8">
           <a
             href="#work"
             className="text-slate-400 hover:text-slate-50 transition-colors text-sm"
@@ -39,7 +31,7 @@ export default function Header() {
           </a>
         </div>
       </nav>
-    </motion.header>
+    </header>
   );
 }
 
