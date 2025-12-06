@@ -10,7 +10,7 @@ export default function AboutSection() {
             About
           </h2>
 
-          <div className="space-y-8 text-lg md:text-xl text-slate-300 leading-relaxed">
+          <div className="space-y-8 text-lg md:text-xl text-slate-700 leading-relaxed">
             <p>
               Product designer based in Israel, working on complex B2B
               interfaces and fintech platforms. I specialize in designing clear,

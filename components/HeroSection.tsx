@@ -9,31 +9,31 @@ export default function HeroSection() {
             Joshua is building products.
           </h1>
           
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-normal leading-tight text-slate-400">
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-normal leading-tight text-slate-600">
             i design things.
           </h2>
           
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-normal leading-tight text-slate-400">
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-normal leading-tight text-slate-600">
             i think design can change things.
           </h2>
           
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-normal leading-tight text-slate-400">
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-normal leading-tight text-slate-600">
             i think the things we design are just as important as the things we choose not to.
           </h2>
           
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-normal leading-tight text-slate-400">
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-normal leading-tight text-slate-600">
             i think we should design things that do the things we don&apos;t enjoy, and make the things we do enjoy, even better.
           </h2>
           
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-normal leading-tight text-slate-400">
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-normal leading-tight text-slate-600">
             i think there are too many things.
           </h2>
           
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-normal leading-tight text-slate-400">
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-normal leading-tight text-slate-600">
             i think there should be fewer, but better things*.
           </h2>
           
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-normal leading-tight text-slate-400">
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-normal leading-tight text-slate-600">
             the best things. an optimal amount.
           </h2>
           

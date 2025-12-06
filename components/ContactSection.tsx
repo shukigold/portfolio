@@ -16,13 +16,13 @@ export default function ContactSection() {
           <div className="flex flex-col sm:flex-row items-start gap-6 text-lg md:text-xl">
             <a
               href="tel:0547174791"
-              className="text-slate-300 hover:text-slate-50 transition-colors"
+              className="text-slate-700 hover:text-slate-950 transition-colors"
             >
               Text Me
             </a>
             <a
               href="mailto:mail@joshgold.design"
-              className="text-slate-300 hover:text-slate-50 transition-colors"
+              className="text-slate-700 hover:text-slate-950 transition-colors"
             >
               Email Me
             </a>
@@ -30,7 +30,7 @@ export default function ContactSection() {
               href="https://drive.google.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-slate-300 hover:text-slate-50 transition-colors"
+              className="text-slate-700 hover:text-slate-950 transition-colors"
             >
               CV
             </a>
