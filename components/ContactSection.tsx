@@ -21,10 +21,10 @@ export default function ContactSection() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-5xl md:text-6xl font-semibold mb-6">
-            Let's work together
+            Let&apos;s work together
           </h2>
           <p className="text-xl text-slate-400 mb-12 max-w-2xl mx-auto">
-            I'm open to new opportunities, collaborations, and freelance
+          I&apos;m open to new opportunities, collaborations, and freelance
             projects. Feel free to reach out.
           </p>
 

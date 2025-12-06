@@ -45,7 +45,7 @@ export default function AboutSection() {
             </p>
             <p className="text-lg md:text-xl text-slate-300 leading-relaxed">
               My work spans dashboards, role-based permissions, vendor
-              management systems, payment workflows, and design systems. I'm
+              management systems, payment workflows, and design systems. I&apos;m
               passionate about creating data-heavy interfaces that feel simple
               and accessible—transforming complex workflows into intuitive
               experiences.
