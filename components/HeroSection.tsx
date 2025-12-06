@@ -1,46 +1,29 @@
 "use client";
 
+import { motion } from "framer-motion";
+
 export default function HeroSection() {
   return (
     <section className="min-h-screen flex items-center justify-center relative px-6 py-32">
-      <div className="max-w-4xl mx-auto">
-        <div className="space-y-8 md:space-y-12">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-normal leading-tight">
-            Joshua is building products.
+      <div className="max-w-4xl mx-auto text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-normal leading-tight mb-6">
+            Product Designer
           </h1>
-          
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-normal leading-tight text-slate-600">
-            i design things.
-          </h2>
-          
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-normal leading-tight text-slate-600">
-            i think design can change things.
-          </h2>
-          
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-normal leading-tight text-slate-600">
-            i think the things we design are just as important as the things we choose not to.
-          </h2>
-          
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-normal leading-tight text-slate-600">
-            i think we should design things that do the things we don&apos;t enjoy, and make the things we do enjoy, even better.
-          </h2>
-          
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-normal leading-tight text-slate-600">
-            i think there are too many things.
-          </h2>
-          
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-normal leading-tight text-slate-600">
-            i think there should be fewer, but better things*.
-          </h2>
-          
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-normal leading-tight text-slate-600">
-            the best things. an optimal amount.
-          </h2>
-          
-          <p className="text-xl md:text-2xl text-slate-500 mt-8">
-            * Less, but better.
-          </p>
-        </div>
+        </motion.div>
+        
+        <motion.p
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+          className="text-xl md:text-2xl lg:text-3xl text-slate-600 leading-relaxed max-w-3xl mx-auto"
+        >
+          Creating clear, trustworthy interfaces and calm, minimal experiences for complex B2B products and fintech platforms.
+        </motion.p>
       </div>
     </section>
   );
