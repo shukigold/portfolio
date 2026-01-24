@@ -10,7 +10,7 @@ export default function BentoPortfolio() {
     { name: "Twitter", url: "https://twitter.com/joshuagoldberg", icon: "𝕏" },
     { name: "GitHub", url: "https://github.com/joshuagoldberg", icon: "↗" },
     { name: "LinkedIn", url: "https://linkedin.com/in/joshuagoldberg", icon: "in" },
-    { name: "Email", url: "mailto:hello@joshuagoldberg.com", icon: "@" },
+    { name: "Email", url: "mailto:mail@joshgold.design", icon: "@" },
   ];
 
   return (
