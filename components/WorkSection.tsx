@@ -91,6 +91,7 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
               />
             </motion.svg>
           </div>
+          </div>
         </motion.div>
       </Link>
     </motion.div>
